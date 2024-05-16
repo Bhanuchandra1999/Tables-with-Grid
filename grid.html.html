@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns:repeat(3,130px);
+            grid-template-rows: repeat(3,150px);
+            width: 600px;
+            height: 600px;
+            gap: 5px;
+            background-color: aqua;
+            padding: 10px;
+            font-size: 40px;
+            text-align: center;
+            
+         }
+        .container div{
+            border: 2px solid rosybrown;
+         }
+     
+         #header:hover{
+            background-color: bisque;
+         }
+         #menu:hover{
+            background-color: bisque;
+         }
+         #main:hover{
+            background-color: bisque;
+         }
+         #right:hover{
+            background-color: bisque;
+         }
+         #footer:hover{
+            background-color: bisque;
+         }
+         .container:hover{
+            border: 5px double blue;
+         }
+         </style>
+ 
+</head>
+<body>
+    <div class="container">
+        <div style="grid-column:1/4;" id="header">header</div>
+        <div style="grid-row:2/4;" id="menu">menu</div>
+        <div style="grid-column: 2/3; " id="main">Main</div>
+        <div style="grid-column: 3/4; " id="right">Right</div>
+        <div style="grid-column: 2/4;" id="footer">Footer</div>
+    </div>
+    
+</body>
+</html>
