@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            display: grid;
+            background-color: chocolate;
+            gap: px;
+            grid-template-columns:repeat(4,100px);
+            grid-template-rows:repeat(3,100px);
+            height: 400px;
+            width: 500px; 
+        }
+        .container div{
+            border: 5px solid black;
+        }
+
+    </style>
+ 
+</head>
+<body>
+    <div class="container">
+    <div style="background-color: green;grid-row: 1/4;">1</div>
+    <div style="background-color: green;grid-column: 2/4;">2</div>
+    <div style="background-color: red;grid-column:4/5">3</div>
+    <div style="background-color: yellow;grid-row: 2/3;">4</div>
+    <div style="background-color: red;grid-row: 3/4;">5</div>
+    <div style="background-color: red;grid-row: 2/3;">6</div>
+    <div style="background-color: yellow;grid-row: 3/4;">7</div>
+    <div style="background-color: green;grid-row: 2/4;">8</div>
+
+</div>
+    
+</body>
+</html>

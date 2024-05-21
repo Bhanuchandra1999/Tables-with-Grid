@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            display: grid;
+            background-color: aquamarine;
+            gap: 3px;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(4,100px);
+            text-align: center;
+            font-size: 20px;
+            justify-content: center;
+        }
+        .container div{
+            border: 2px solid blue;
+        }
+        .container div:hover{
+           background-color: blueviolet;
+           border: 3px dotted black;
+        }
+        
+      
+    </style>
+  
+</head>
+<body>
+    <div class="container">
+        <div style="grid-column: 1/4;" >Header Section </div>
+        <div style="grid-column: 1/4;">Navigation bar</div>
+        <div style="grid-row: 3/4;">index</div>
+        <div style="grid-column: 2/4;">content Section</div>
+        <div style="grid-column: 1/4;">Footer Section</div>
+    </div>
+    
+</body>
+</html>
